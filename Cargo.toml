@@ -1,0 +1,18 @@
+[package]
+name = "http_tunnel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0", features = ["codec"] }
+async-trait = "0.1"
+rand = "0.8"
+bytes = "1"
+futures = "0"
+tokio-rustls = "0.23"
+rustls = "*" # use version provided by tokio-rustls
+rustls-pemfile = "0.2"
+thiserror = "1.0"
